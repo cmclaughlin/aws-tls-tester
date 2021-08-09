@@ -12,4 +12,4 @@ for lb in lbs['LoadBalancers']:
             ssl_policy = client.describe_ssl_policies(
                 Names=[listener['SslPolicy']])
             for policy in ssl_policy['SslPolicies']:
-                print listener['SslPolicy'], lb['LoadBalancerName']
+                print(listener['SslPolicy'], lb['LoadBalancerName'])
